@@ -8,6 +8,7 @@ No frameworks and/or libraries are used to create these projects.
 
 * Day 1: A javascript drum kit.
 * Day 2: Javascript and css clock.
+* Day 3: CSS Variables.
 
 ### About the course:
 
