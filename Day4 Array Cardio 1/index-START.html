@@ -92,7 +92,7 @@
     //   const yearsLived = inventor.passed - inventor.year;
     //   inventor.age = yearsLived;
     // });
-    console.table(sortedByAge);
+    // console.table(sortedByAge);
 
     // Other way of doing the same as above
     const sortedByAgeTwo = inventors.sort(function(first, second) {
@@ -104,10 +104,11 @@
         return -1;
       }
       });
-      inventors.forEach(function(inventor) {
-        const age = inventor.passed - inventor.year;
-        inventor.age = age;
-      });
+      // Way to show the actual inventor's age in the table to verify that the code works as intended.
+      // inventors.forEach(function(inventor) {
+      //   const age = inventor.passed - inventor.year;
+      //   inventor.age = age;
+      // });
     // console.table(sortedByAgeTwo);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -119,6 +120,16 @@
     //             .map(link => link.textContent)
     //             .filter(streetName => streetName.includes('de'));
 
+    // Other way of doing the same as above
+    // This was done on this website: https://moz.com/top500
+
+    // const table = document.querySelector('.table');
+    // const links = Array.from(table.querySelectorAll('a'));
+    // const mapped = links.map(link => link.textContent);
+    // const filtered = mapped.filter(urls => urls.includes('.be'));
+    // console.table(mapped);
+    // console.table(filtered);
+
     // 7. sort Exercise
     // Sort the people alphabetically by last name
     const alpha = people.sort((lastOne, nextOne) => {
@@ -126,22 +137,45 @@
       const [bLast, bFirst] = nextOne.split(', ');
       return aLast > bLast ? 1 : -1;
     });
-    // console.log(alpha);
+    // console.table(alpha);
+
+    // Other way of doing the same as above
+    const beta = people.sort(function(firstOne, lastOne) {
+      const [aLast, aFirst] = firstOne.split(', ');
+      const [bLast, bFirst] = lastOne.split(', ');
+      if (aLast > bLast) {
+        return 1;
+      } else {
+        return -1
+      }
+    });
+    // console.table(beta);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'bus', 'train', 'plane', 'helicopter', 'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'bus', 'train', 'plane', 'helicopter', 'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'bus', 'train', 'plane'];
 
     const transportation = data.reduce(function(obj, item) {
-      if (!obj[item]) {
+      if (!obj.items) {
+        obj.items = 0;
+      } else if (!obj[item]) {
         obj[item] = 0;
       }
       obj[item]++;
+      obj.items++;
       return obj;
     }, {});
+    // console.table(transportation);
 
-    // console.log(transportation);
-
+    // const transportationTwo = data.reduce((obj, item) => {
+    //   const firstChar = item.charAt(0);
+    //   if (!obj[firstChar]) {
+    //     obj[firstChar] = 0;
+    //   }
+    //   obj[firstChar]++;
+    //   return obj;
+    // }, {});
+    // console.table(transportationTwo);
   </script>
 </body>
 </html>
