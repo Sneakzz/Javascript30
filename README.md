@@ -1,8 +1,6 @@
 # JavaScript 30
 
 This course is about creating various projects with html, css and javascript.
-No frameworks and/or libraries are used to create these projects.
-
 
 ### Completed projects:
 
@@ -10,6 +8,7 @@ No frameworks and/or libraries are used to create these projects.
 * Day 2: Javascript and css clock.
 * Day 3: CSS Variables.
 * Day 4: Array Cardio 1.
+* Day 5: Flex panels image gallery.
 
 ### About the course:
 
