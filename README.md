@@ -9,6 +9,7 @@ This course is about creating various projects with html, css and javascript.
 * Day 3: CSS Variables.
 * Day 4: Array Cardio 1.
 * Day 5: Flex panels image gallery.
+* Day 6: Ajax Type Ahead
 
 ### About the course:
 
