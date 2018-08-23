@@ -11,6 +11,7 @@ This course is about creating various projects with html, css and javascript.
 * Day 5: Flex panels image gallery
 * Day 6: Ajax Type Ahead
 * Day 7: Array Cardio 2
+* Day 8: HTML5 Canvas
 
 ### About the course:
 
