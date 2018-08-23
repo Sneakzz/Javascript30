@@ -12,6 +12,7 @@ This course is about creating various projects with html, css and javascript.
 * Day 6: Ajax Type Ahead
 * Day 7: Array Cardio 2
 * Day 8: HTML5 Canvas
+* Day 9: Dev Tools Domination
 
 ### About the course:
 
