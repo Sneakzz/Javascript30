@@ -5,6 +5,8 @@ This course is about creating various projects with html, css and javascript.
 ### Completed projects:
 
 * Day 1: A javascript drum kit
+  ![image](https://user-images.githubusercontent.com/32787307/44955363-4c298000-aeb2-11e8-9285-387c7de03441.png)
+
 * Day 2: Javascript and css clock
 * Day 3: CSS Variables
 * Day 4: Array Cardio 1
